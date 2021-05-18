@@ -6,7 +6,7 @@ While machine learning approaches have been successfully used to represent inter
 
 ### Method
 
-[newline] $$y=x^2$$ [newline]
+$y=x^2$
 
 ```markdown
 Syntax highlighted code block
