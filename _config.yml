@@ -3,3 +3,10 @@ title: Rapid Artificial Neural Network (RANN)
 description: Physics-based ML potential at the speed of traditional interatomic potential
 show_downloads: false
 mathjax : true
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
