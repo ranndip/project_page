@@ -1,6 +1,7 @@
 
 ### Authors
 Doyl Dickel
+
 Christopher Barrett
 
 ### Abstract
