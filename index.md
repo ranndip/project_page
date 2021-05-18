@@ -1,12 +1,3 @@
----
-title: "test"
-tags:
-  - Blog
-  - MathJax
-  - Jekyll
-  - LaTeX
-use_math: true
----
 
 ### Authors
 ...
@@ -17,7 +8,13 @@ While machine learning approaches have been successfully used to represent inter
 ### Method
 
 $$y=x^2$$
+
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
+
 <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
 
 
 ### Parameter file
