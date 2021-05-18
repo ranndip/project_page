@@ -4,9 +4,3 @@ description: Physics-based First-Principle level accuracy ML potential at the sp
 show_downloads: false
 mathjax : true
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
