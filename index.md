@@ -1,6 +1,3 @@
-usemathjax: true
-ext-js : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js```
-
 ### Authors
 ...
 
@@ -10,6 +7,7 @@ While machine learning approaches have been successfully used to represent inter
 ### Method
 
 $$y=x^2$$
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
 
 ```markdown
 Syntax highlighted code block
