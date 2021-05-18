@@ -1,3 +1,7 @@
+---
+use_math: true
+---
+
 ### Authors
 ...
 
