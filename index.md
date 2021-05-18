@@ -1,4 +1,10 @@
 ---
+title: "test"
+tags:
+  - Blog
+  - MathJax
+  - Jekyll
+  - LaTeX
 use_math: true
 ---
 
