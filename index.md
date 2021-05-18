@@ -1,3 +1,6 @@
+usemathjax: true
+ext-js : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js```
+
 ### Authors
 ...
 
@@ -6,7 +9,7 @@ While machine learning approaches have been successfully used to represent inter
 
 ### Method
 
-$y=x^2$
+$$y=x^2$$
 
 ```markdown
 Syntax highlighted code block
