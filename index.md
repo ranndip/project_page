@@ -57,7 +57,7 @@ where <img src="https://latex.codecogs.com/svg.latex?f_c" title="f_c" /> is the 
 The effect of including angular screening can be demonstrating by considering the change of an individual fingerprint as the length scale is changed continuously. In the absence of angular screening, the value of the fingerprint will change rapidly at particular values of the lattice constant as new neighbors enter the radial screening distance. If angular screening is included with metaparameters such that, for example, only 3rd nearest neighbors are ever included regardless of lattice parameter, the change in the value is considerably smoother. 
 
 
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) ### How to develop a RANN potential
+### ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) How to develop a RANN potential
 **1.  DFT database**
 A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publications](https://www.sciencedirect.com/science/article/pii/S0927025620306984) Typically the user needs to have the following DFT simulations:
 
@@ -81,11 +81,8 @@ Once the user have the DFT database, the outputs are required to convert in LAMM
 
 The calibration repository has c++ source code to train the data. Please go through the README file in that repository to compile the code, training input file and potential file description
 
-**4. LAMMPS installation and usage of potential**
-
-pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well.
-
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) **LAMMPS Installation with RANN package**
+pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well.
 
 * Copy ``User-RANN`` folder to the LAMMPS ``src/ folder``.
 * ``make-serial/make-mpi`` to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
@@ -104,8 +101,8 @@ pair_coeff ** Mg.rann Mg
 pair_coeff ** MgAlalloy.rann Mg Mg Al Mg
 ```
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `Please contact for any inquiries:` 
-```
-Dr. Doyl E. Dickel
+```diff
+- Dr. Doyl E. Dickel
 Assistant Professor
 Mechanical Engineering, Mississippi State University
 doyl@me.msstate.edu
