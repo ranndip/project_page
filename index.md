@@ -108,5 +108,4 @@ Please contact for any inquiries:
 Dr. Doyl E. Dickel
 doyl@me.msstate.edu
 ```
-
-![plot](./directory_1/directory_2/.../directory_n/cavs-msstate.png)
+![plot](./cavs-msstate.png)
