@@ -102,7 +102,7 @@ pair_coeff ** MgAlalloy.rann Mg Mg Al Mg
 ```
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `Please contact for any inquiries:` 
 ```diff
-- Dr. Doyl E. Dickel
+Dr. Doyl E. Dickel
 Assistant Professor
 Mechanical Engineering, Mississippi State University
 doyl@me.msstate.edu
