@@ -82,12 +82,12 @@ The calibration repository has c++ source code to train the data. Please go thro
 
 pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well.
 
-**Installation:**
+**Installation with RANN package**
 
 * Copy User-RANN folder to the LAMMPS src/ folder.
 * make-serial/make-mpi to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
 
-**How to use**
+**How to use the potentials**
 
 In your LAMMPS input script, specify 
 ```
