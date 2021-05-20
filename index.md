@@ -82,7 +82,8 @@ Once the user have the DFT database, the outputs are required to convert in LAMM
 The calibration repository has c++ source code to train the data. Please go through the README file in that repository to compile the code, training input file and potential file description
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) **LAMMPS Installation with RANN package**
-pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well.
+
+pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well. Please go through the README file provided in USRE-RANN repository. 
 
 * Copy ``User-RANN`` folder to the LAMMPS ``src/ folder``.
 * ``make-serial/make-mpi`` to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
