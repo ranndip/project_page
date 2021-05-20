@@ -9,10 +9,9 @@
 [Christopher Barrett](https://scholar.google.com/citations?hl=en&user=DMtfKn0AAAAJ)
 
 
-### Abstract
 An implementation of a rapid artificial neural network (RANN) style potential in the LAMMPS molecular dynamics package is presented here which utilizes angular screening to reduce computational complexity without reducing accuracy. For the smallest neural network architectures, this formalism rivals the modified embedded atom method (MEAM) for speed and accuracy, while the networks approximately one third as fast as MEAM were capable of reproducing the training database with chemical accuracy. The numerical accuracy of the LAMMPS implementation is assessed by verifying conservation of energy and agreement between calculated forces and pressures and the observed derivatives of the energy as well as by assessing the stability of the potential in dynamic simulation. The potential style is tested using a force field for magnesium and the computational efficiency for a variety of architectures is compared to a traditional potential models as well as alternative ANN formalisms. The predictive accuracy is found to rival that of slower methods. While machine learning approaches have been successfully used to represent interatomic potentials, their speed has typically lagged behind conventional formalisms. This is often due to the complexity of the structural fingerprints used to describe the local atomic environment and the large cutoff radii and neighbor lists used in the calculation of these fingerprints. Even recent machine learned methods are at least 10 times slower than traditional formalisms. An implementation of a rapid artificial neural network (RANN) style potential in the LAMMPS molecular dynamics package is presented here which utilizes angular screening to reduce computational complexity without reducing accuracy. For the smallest neural network architectures, this formalism rivals the modified embedded atom method (MEAM) for speed and accuracy, while the networks approximately one third as fast as MEAM were capable of reproducing the training database with chemical accuracy. The numerical accuracy of the LAMMPS implementation is assessed by verifying conservation of energy and agreement between calculated forces and pressures and the observed derivatives of the energy as well as by assessing the stability of the potential in dynamic simulation. 
 
-### Artificial Neural Network Architecture
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) ### Artificial Neural Network Architecture
 The energy of a particular atom <img src="https://latex.codecogs.com/svg.latex?i" title="i" />, determined by its environment, is the last of N layers of the neural network. The values for any particular layer, <img src="https://latex.codecogs.com/svg.latex?{\bf{A}}^n" title="{\bf{A}}^n" />,after the first is determined by the previous layer and the weight and bias matrices <img src="https://latex.codecogs.com/svg.latex?\mathbf{W}^n" title="\mathbf{W}^n" /> and <img src="https://latex.codecogs.com/gif.latex?\mathbf{B}^n" title="\mathbf{B}^n" />:
 
 <img src="https://latex.codecogs.com/svg.latex?Z^n_{l_n}=\sum_{l_{n-1}}{W^n_{l_nl_{n-1}}A^{n-1}_{l_{n-1}}&plus;B^n_{l_n}}" title="Z^n_{l_n}=\sum_{l_{n-1}}{W^n_{l_nl_{n-1}}A^{n-1}_{l_{n-1}}+B^n_{l_n}}" />
@@ -57,7 +56,7 @@ where <img src="https://latex.codecogs.com/svg.latex?f_c" title="f_c" /> is the 
 The effect of including angular screening can be demonstrating by considering the change of an individual fingerprint as the length scale is changed continuously. In the absence of angular screening, the value of the fingerprint will change rapidly at particular values of the lattice constant as new neighbors enter the radial screening distance. If angular screening is included with metaparameters such that, for example, only 3rd nearest neighbors are ever included regardless of lattice parameter, the change in the value is considerably smoother. 
 
 
-### How to develop a RANN potential
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) ### How to develop a RANN potential
 **1.  DFT database**
 A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publications](https://www.sciencedirect.com/science/article/pii/S0927025620306984) Typically the user needs to have the following DFT simulations:
 
@@ -81,11 +80,11 @@ Once the user have the DFT database, the outputs are required to convert in LAMM
 
 The calibration repository has c++ source code to train the data. Please go through the README file in that repository to compile the code, training input file and potential file description
 
-**4.  LAMMPS installation and usage of potential**
+**4. LAMMPS installation and usage of potential**
 
 pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well.
 
-**Installation with RANN package**
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) **LAMMPS Installation with RANN package**
 
 * Copy ``User-RANN`` folder to the LAMMPS ``src/ folder``.
 * ``make-serial/make-mpi`` to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
