@@ -69,3 +69,34 @@ A fairly large database is needed to ensure the wide range of atomic environment
 - _Planer separation distance:_ To predict the decohesion energy and fracture behavior accurately, a dataset of common planer separation is required.
 
 - _Amorphous:_ A amorphous dataset is required to predict melting temperature correctly. 
+
+**2. Quantum espresso to LAMMPS dump format**
+
+Once the user have the DFT database, the outputs are required to convert in LAMMPS dump format. A python code to convert Quantum espresso output to LAMMPS dump format is given in MISC repository.
+
+**3. Training **
+
+The calibration repository has c++ source code to train the data. Please go through the README file in that repository to compile the code, training input file and potential file description
+
+**4.  LAMMPS installation and usage of potential**
+
+pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was built with that package. Additionally, if any spin fingerprint styles are used LAMMPS must be built with the SPIN package as well.
+
+**Installation:**
+
+* Copy User-RANN folder to the LAMMPS src/ folder.
+* make-serial/make-mpi to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
+
+**How to use**
+
+In your LAMMPS input script, specify 
+```
+pair_style rann
+pair_coeff file Type1_element Type2_element Type3_element...
+```
+**Examples:**
+```
+pair_style rann
+pair_coeff ** Mg.rann Mg
+pair_coeff ** MgAlalloy.rann Mg Mg Al Mg
+```
