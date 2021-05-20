@@ -49,7 +49,8 @@ and then screening value is
 
 <img src="https://latex.codecogs.com/svg.latex?S_{ikj}=f_c\left(\frac{C_{ikj}-C_{min}}{C_{max}-C_{min}}\right)" title="S_{ikj}=f_c\left(\frac{C_{ikj}-C_{min}}{C_{max}-C_{min}}\right)" />
 
-where <img src="https://latex.codecogs.com/svg.latex?f_c" title="f_c" /> is the same cutoff function used for the radial cutoff and <img src="https://latex.codecogs.com/svg.latex?C_{max}" title="C_{max}" /> and <img src="https://latex.codecogs.com/svg.latex?C_{min}" title="C_{min}" /> are metaparameters which can be tuned to determine which neighbors can be excluded from calculations.\\
+where <img src="https://latex.codecogs.com/svg.latex?f_c" title="f_c" /> is the same cutoff function used for the radial cutoff and <img src="https://latex.codecogs.com/svg.latex?C_{max}" title="C_{max}" /> and <img src="https://latex.codecogs.com/svg.latex?C_{min}" title="C_{min}" /> are metaparameters which can be tuned to determine which neighbors can be excluded from calculations.
+
 The effect of including angular screening can be demonstrating by considering the change of an individual fingerprint as the length scale is changed continuously. In the absence of angular screening, the value of the fingerprint will change rapidly at particular values of the lattice constant as new neighbors enter the radial screening distance. If angular screening is included with metaparameters such that, for example, only 3rd nearest neighbors are ever included regardless of lattice parameter, the change in the value is considerably smoother. 
 
 
