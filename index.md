@@ -74,7 +74,7 @@ A fairly large database is needed to ensure the wide range of atomic environment
 
 Once the user have the DFT database, the outputs are required to convert in LAMMPS dump format. A python code to convert Quantum espresso output to LAMMPS dump format is given in MISC repository.
 
-**3. Training **
+**3. Training**
 
 The calibration repository has c++ source code to train the data. Please go through the README file in that repository to compile the code, training input file and potential file description
 
