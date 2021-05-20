@@ -75,7 +75,7 @@ A fairly large database is needed to ensure the wide range of atomic environment
 
 **2. Quantum espresso to LAMMPS dump format**
 
-Once the user have the DFT database, the outputs are required to convert in LAMMPS dump format. A python code to convert Quantum espresso output to LAMMPS dump format is given in MISC repository.
+Once the user have the DFT database, the outputs are required to convert in LAMMPS dump format. A ``python code to convert Quantum espresso output to LAMMPS dump format`` is given in ``MISC`` repository.
 
 **3. Training**
 
@@ -103,3 +103,9 @@ pair_style rann
 pair_coeff ** Mg.rann Mg
 pair_coeff ** MgAlalloy.rann Mg Mg Al Mg
 ```
+Please contact for any inquiries:
+```
+Dr. Doyl E. Dickel
+doyl@me.msstate.edu
+```
+![plot](./directory_1/directory_2/.../directory_n/cavs-msstate.png)
