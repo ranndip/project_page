@@ -90,7 +90,7 @@ pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was
 * Copy ``User-RANN`` folder to the LAMMPS ``src/ folder``.
 * ``make-serial/make-mpi`` to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
 
-**How to use the potentials**
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) **How to use the potentials**
 
 In your LAMMPS input script, specify 
 ```
@@ -103,7 +103,7 @@ pair_style rann
 pair_coeff ** Mg.rann Mg
 pair_coeff ** MgAlalloy.rann Mg Mg Al Mg
 ```
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `_Please contact for any inquiries:_` 
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `Please contact for any inquiries:` 
 ```
 Dr. Doyl E. Dickel
 Assistant Professor
