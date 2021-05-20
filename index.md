@@ -55,17 +55,17 @@ The effect of including angular screening can be demonstrating by considering th
 
 
 ### How to develop a RANN potential
-* DFT database
+**1.  DFT database**
 A fairly large database is needed to ensure the wide range of atomic environments. Typically the user needs to have the following DFT simulations:
 
-- Stain: Strain of primitive/unitcell, up to +-10% from ideal, which consisting in volumetric, shear	and in-plane strain. 
+- _Stain:_ Strain of primitive/unitcell, up to +-10% from ideal, which consisting in volumetric, shear	and in-plane strain. 
 
-- Thermal: Simulation of thermally excited atoms along with changes in cell parameters (+-3% from ideal). Atoms displaced from their relaxed ground-state position by a randomly generated vector within a cutoff distance ranging from 0.1-0.5 angstrom. The temperature of a given system was estimated by the per atom difference of energy between the perturbed system and the ground state divided by Boltzmann constant . 
+- _Thermal:_ Simulation of thermally excited atoms along with changes in cell parameters (+-3% from ideal). Atoms displaced from their relaxed ground-state position by a randomly generated vector within a cutoff distance ranging from 0.1-0.5 angstrom. The temperature of a given system was estimated by the per atom difference of energy between the perturbed system and the ground state divided by Boltzmann constant . 
 
-- Free surface: Free surface of common planes, where atoms are perturbed randomly same as thermal data. 
+- _Free surface:_ Free surface of common planes, where atoms are perturbed randomly same as thermal data. 
 
-- Defects: Defects including interstitial, di vacancy in (1st, 2nd and 3rd nearest neighbor list), tri, quad and quin vacancies. 
+- _Defects:_ Defects including interstitial, di vacancy in (1st, 2nd and 3rd nearest neighbor list), tri, quad and quin vacancies. 
 
-- Planer separation distance: To predict the decohesion energy and fracture behavior accurately, a dataset of common planer separation is required.
+- _Planer separation distance:_ To predict the decohesion energy and fracture behavior accurately, a dataset of common planer separation is required.
 
-- Amorphous: A amorphous dataset is required to predict melting temperature correctly. 
+- _Amorphous:_ A amorphous dataset is required to predict melting temperature correctly. 
