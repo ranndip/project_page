@@ -54,3 +54,18 @@ where <img src="https://latex.codecogs.com/svg.latex?f_c" title="f_c" /> is the 
 The effect of including angular screening can be demonstrating by considering the change of an individual fingerprint as the length scale is changed continuously. In the absence of angular screening, the value of the fingerprint will change rapidly at particular values of the lattice constant as new neighbors enter the radial screening distance. If angular screening is included with metaparameters such that, for example, only 3rd nearest neighbors are ever included regardless of lattice parameter, the change in the value is considerably smoother. 
 
 
+### How to develop a RANN potential
+* DFT database
+A fairly large database is needed to ensure the wide range of atomic environments. Typically the user needs to have the following DFT simulations:
+
+- Stain: Strain of primitive/unitcell, up to +-10% from ideal, which consisting in volumetric, shear	and in-plane strain. 
+
+- Thermal: Simulation of thermally excited atoms along with changes in cell parameters (+-3% from ideal). Atoms displaced from their relaxed ground-state position by a randomly generated vector within a cutoff distance ranging from 0.1-0.5 angstrom. The temperature of a given system was estimated by the per atom difference of energy between the perturbed system and the ground state divided by Boltzmann constant . 
+
+- Free surface: Free surface of common planes, where atoms are perturbed randomly same as thermal data. 
+
+- Defects: Defects including interstitial, di vacancy in (1st, 2nd and 3rd nearest neighbor list), tri, quad and quin vacancies. 
+
+- Planer separation distance: To predict the decohesion energy and fracture behavior accurately, a dataset of common planer separation is required.
+
+- Amorphous: A amorphous dataset is required to predict melting temperature correctly. 
