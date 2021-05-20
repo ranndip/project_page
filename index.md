@@ -59,7 +59,7 @@ The effect of including angular screening can be demonstrating by considering th
 
 ### ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) How to develop a RANN potential
 **1.  DFT database**
-A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publications](https://www.sciencedirect.com/science/article/pii/S0927025620306984) Typically the user needs to have the following DFT simulations:
+A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publications](https://www.sciencedirect.com/science/article/pii/S0927025620306984). Typically the user needs to have the following DFT simulations:
 
 - _Stain:_ Strain of primitive/unitcell, up to +-10% from ideal, which consisting in volumetric, shear	and in-plane strain. 
 
