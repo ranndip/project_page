@@ -1,12 +1,12 @@
-[### LAMMPS implementation of rapid artificial neural network derived interatomic potentials](https://www.sciencedirect.com/science/article/pii/S0927025621002068)
+[LAMMPS implementation of rapid artificial neural network derived interatomic potentials](https://www.sciencedirect.com/science/article/pii/S0927025621002068)
 
 
 ### Authors
-Doyl Dickel
+[Doyl Dickel](https://scholar.google.com/citations?hl=en&user=htw4EoMAAAAJ)
 
-Mashroor Nitol
+[Mashroor Nitol](https://scholar.google.com/citations?user=cyDU6TkAAAAJ&hl=en)
 
-Christopher Barrett
+[Christopher Barrett](https://scholar.google.com/citations?hl=en&user=DMtfKn0AAAAJ)
 
 
 ### Abstract
@@ -59,7 +59,7 @@ The effect of including angular screening can be demonstrating by considering th
 
 ### How to develop a RANN potential
 **1.  DFT database**
-A fairly large database is needed to ensure the wide range of atomic environments. Typically the user needs to have the following DFT simulations:
+A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publcations](https://www.sciencedirect.com/science/article/pii/S0927025620306984) Typically the user needs to have the following DFT simulations:
 
 - _Stain:_ Strain of primitive/unitcell, up to +-10% from ideal, which consisting in volumetric, shear	and in-plane strain. 
 
