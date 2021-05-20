@@ -59,7 +59,7 @@ The effect of including angular screening can be demonstrating by considering th
 
 ### How to develop a RANN potential
 **1.  DFT database**
-A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publcations](https://www.sciencedirect.com/science/article/pii/S0927025620306984) Typically the user needs to have the following DFT simulations:
+A fairly large database is needed to ensure the wide range of atomic environments. A detail procedure can be found in our [publications](https://www.sciencedirect.com/science/article/pii/S0927025620306984) Typically the user needs to have the following DFT simulations:
 
 - _Stain:_ Strain of primitive/unitcell, up to +-10% from ideal, which consisting in volumetric, shear	and in-plane strain. 
 
@@ -87,8 +87,8 @@ pair_style rann requires the USER-RANN package. It is only enabled if LAMMPS was
 
 **Installation with RANN package**
 
-* Copy User-RANN folder to the LAMMPS src/ folder.
-* make-serial/make-mpi to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
+* Copy ``User-RANN`` folder to the LAMMPS ``src/ folder``.
+* ``make-serial/make-mpi`` to install lammps are the same as specified in the following page. https://lammps.sandia.gov/doc/Build_make.html
 
 **How to use the potentials**
 
