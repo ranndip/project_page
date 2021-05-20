@@ -28,3 +28,28 @@ The second kind of fingerprint function considers three body terms, with a form 
 <img src="https://latex.codecogs.com/svg.latex?G_{m,k}=\sum_{j,k}{\cos^m{\theta_{jik}}e^{-\beta_k\frac{r_{ij}&plus;r_{ik}}{r_e}}f_c(\frac{r_c-r_{ij}}{\Delta&space;r})f_c(\frac{r_c-r_{ik}}{\Delta&space;r})S_{ij}S_{ik}}" title="G_{m,k}=\sum_{j,k}{\cos^m{\theta_{jik}}e^{-\beta_k\frac{r_{ij}+r_{ik}}{r_e}}f_c(\frac{r_c-r_{ij}}{\Delta r})f_c(\frac{r_c-r_{ik}}{\Delta r})S_{ij}S_{ik}}" />
 
 where <img src="https://latex.codecogs.com/svg.latex?\theta_{jik}" title="\theta_{jik}" /> is the angle between <img src="https://latex.codecogs.com/svg.latex?r_{ij}" title="r_{ij}" /> and <img src="https://latex.codecogs.com/svg.latex?r_{ik}" title="r_{ik}" />, <img src="https://latex.codecogs.com/svg.latex?m" title="m" /> is a non-negative interger and <img src="https://latex.codecogs.com/svg.latex?\beta_k" title="\beta_k" /> is a set of metaparameters which determine the length scale of the different terms. 
+
+A particular ANN potential will consist of a fixed structural fingerprint, number and length of each hidden layer, weight and bias matrices for each layer and activation functions for each layer. For the potentials considered here we have used the following activation functions:
+
+<img src="https://latex.codecogs.com/svg.latex?g^N(x)=x&space;\label{eq:activation1}" title="g^N(x)=x \label{eq:activation1}" />
+
+<img src="https://latex.codecogs.com/svg.latex?g^n(x)=\frac{x}{10}&plus;\frac{9}{10}\log(e^x&plus;1)\;&space;\textrm{for}&space;\;n<N" title="g^n(x)=\frac{x}{10}+\frac{9}{10}\log(e^x+1)\; \textrm{for} \;n<N" />
+
+The size of the weight and bias matrices will depend on the length of the fingerprint and the length of each hidden layer.
+
+Angular screening, whereby the effective interaction between atoms is reduced or eliminated by the presence of an atom located between them can effectively limit the neighbor list in a similar way without the unphysical results. Such a method has been utilized by MEAM and the same screening method has been employed here. Briefly, the screening between two atoms is determined from the product of all the screening interactions by other atoms in the neighborhood:
+
+<img src="https://latex.codecogs.com/svg.latex?S_{ij}=\prod_{k\neq&space;i,j}S_{ikj}" title="S_{ij}=\prod_{k\neq i,j}S_{ikj}" />
+
+where <img src="https://latex.codecogs.com/svg.latex?S_{ikj}" title="S_{ikj}" /> is calculated from a geometric construction considering the ellipse formed by the 3 atoms with <img src="https://latex.codecogs.com/svg.latex?r_{i,j}" title="r_{i,j}" /> one of the axes. The screening parameter, <img src="https://latex.codecogs.com/svg.latex?C_{ikj}" title="C_{ikj}" /> is then given by:
+
+<img src="https://latex.codecogs.com/svg.latex?C_{ikj}=1&plus;2\frac{r^2_{ij}r^2_{ik}&plus;r^2_{ij}r^2_{jk}-r^4_{ij}}{r^4_{ij}-(r^2_{ik}-r^2_{jk})^2}" title="C_{ikj}=1+2\frac{r^2_{ij}r^2_{ik}+r^2_{ij}r^2_{jk}-r^4_{ij}}{r^4_{ij}-(r^2_{ik}-r^2_{jk})^2}" />
+
+and then screening value is
+
+<img src="https://latex.codecogs.com/svg.latex?S_{ikj}=f_c\left(\frac{C_{ikj}-C_{min}}{C_{max}-C_{min}}\right)" title="S_{ikj}=f_c\left(\frac{C_{ikj}-C_{min}}{C_{max}-C_{min}}\right)" />
+
+where <img src="https://latex.codecogs.com/svg.latex?f_c" title="f_c" /> is the same cutoff function used for the radial cutoff and <img src="https://latex.codecogs.com/svg.latex?C_{max}" title="C_{max}" /> and <img src="https://latex.codecogs.com/svg.latex?C_{min}" title="C_{min}" /> are metaparameters which can be tuned to determine which neighbors can be excluded from calculations.\\
+The effect of including angular screening can be demonstrating by considering the change of an individual fingerprint as the length scale is changed continuously. In the absence of angular screening, the value of the fingerprint will change rapidly at particular values of the lattice constant as new neighbors enter the radial screening distance. If angular screening is included with metaparameters such that, for example, only 3rd nearest neighbors are ever included regardless of lattice parameter, the change in the value is considerably smoother. 
+
+
