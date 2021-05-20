@@ -11,4 +11,4 @@ An implementation of a rapid artificial neural network (RANN) style potential in
 
 ### Artificial Neural Network Architecture
 The energy of a particular atom _i_, determined by its environment, is the last of N layers of the neural network. The values for any particular layer, <img src="https://latex.codecogs.com/gif.latex?{\bf{A}}^n" title="{\bf{A}}^n" />,after the first is determined by the previous layer and the weight and bias matrices <img src="https://latex.codecogs.com/gif.latex?\mathbf{W}^n" title="\mathbf{W}^n" /> and <img src="https://latex.codecogs.com/gif.latex?\mathbf{B}^n" title="\mathbf{B}^n" />:
-<img src="https://latex.codecogs.com/gif.latex?Z^n_{l_n}=\sum_{l_{n-1}}{W^n_{l_nl_{n-1}}A^{n-1}_{l_{n-1}}&plus;B^n_{l_n}}&space;\\&space;A^n_{l_n}=g^n(Z^n_{l_n})" 
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"> 
